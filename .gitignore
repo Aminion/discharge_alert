@@ -1,0 +1,3 @@
+# PlatformIO directories to ignore
+.pio/
+.platformio/
