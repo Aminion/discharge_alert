@@ -9,6 +9,7 @@ I used a chip with a Micronucleus bootloader(flashed via Arduino Uno as SPI) plu
     pio run -t upload
 
 Note: you need appropriate rights to access USB:
+
     extraGroups = [ "udev" ];
     # ATtiny boards with Micronucleus bootloader (Digispark, Adafruit Trinket, etc.)
     SUBSYSTEM=="usb", ATTR{idVendor}=="16d0", ATTR{idProduct}=="0753", MODE="0666"
