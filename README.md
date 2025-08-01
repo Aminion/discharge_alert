@@ -10,7 +10,7 @@ I used a chip with a Micronucleus bootloader(flashed via Arduino Uno as SPI) plu
 
 Note: you need appropriate rights to access USB:
 
-    extraGroups = [ "udev" ];
+    extraGroups = [ "dialout" "udev" ];
     # ATtiny boards with Micronucleus bootloader (Digispark, Adafruit Trinket, etc.)
     SUBSYSTEM=="usb", ATTR{idVendor}=="16d0", ATTR{idProduct}=="0753", MODE="0666"
     SUBSYSTEM=="usb", ATTR{idVendor}=="1781", ATTR{idProduct}=="0c9f", MODE="0666"
